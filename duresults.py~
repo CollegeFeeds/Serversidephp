@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup as bs
-src=requests.get("http://www.du.ac.in/du/index.php?page=students-welfare").text
+src=requests.get("http://www.du.ac.in/du/index.php?page=students-welfare").txt
 soup=bs(src,"html.parser")
 soup1=soup.find_all('div',class_="block")[1]          
 soup2=soup1.find_all('a') 
